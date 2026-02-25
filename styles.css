@@ -1,0 +1,150 @@
+* { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        background: #fafafa;
+        color: #222;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px 0 10px 0;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 1.6rem;
+    }
+
+    .container {
+        flex: 1;
+        padding: 20px 40px;
+    }
+
+    table {
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    thead th {
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 2px solid #000;
+    }
+
+    td {
+        text-align: center;
+        padding: 8px;
+        border-bottom: 1px solid #e0e0e0;
+        vertical-align: top;
+    }
+    td.fbc {
+    background-color: #fff9c4; /* amarillo claro */
+    }
+
+    td.fbp {
+        background-color: #e3f2fd; /* azul claro */
+    }
+
+    td.fe {
+        background-color: #e1bee7; /* morado claro */
+    }
+
+    td.foa {
+        background-color: #dcedc8; /* verde claro */
+    }
+
+    /* Opcional: mantener el hover más suave */
+    td:hover {
+        filter: brightness(0.95);
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+    td:hover {
+        background: #f5f5f5;
+    }
+
+    .materia {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    }
+
+    .clave {
+        font-size: 0.7em;
+        font-weight: 600;
+        opacity: 0.6;
+    }
+
+    .nombre {
+        font-weight: 600;
+        font-size: 0.85em;
+    }
+
+    .creditos {
+        font-size: 0.7em;
+        opacity: 0.7;
+    }
+
+    /* Contenedor principal de la leyenda */
+    .leyenda {
+        display: flex;
+        justify-content: space-between; /* separación izquierda-derecha */
+        margin: 20px 40px;
+        gap: 40px; /* espacio entre columnas */
+        flex-wrap: wrap; /* para pantallas pequeñas */
+        font-size: 0.9rem;
+        color: #222;
+    }
+
+    /* Columnas izquierda y derecha */
+    .leyenda-left,
+    .leyenda-right {
+        flex: 1; /* cada columna ocupa igual espacio */
+        min-width: 200px; /* evita que se encojan demasiado */
+    }
+
+    /* Títulos */
+    .leyenda h2 {
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    /* Lista de colores para áreas de formación */
+    .leyenda ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Items con cuadrito de color */
+    .leyenda li {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .leyenda span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    /* Reusar los colores de las áreas de formación */
+    .leyenda span.fbc { background-color: #fff9c4; }
+    .leyenda span.fbp { background-color: #e3f2fd; }
+    .leyenda span.fe  { background-color: #e1bee7; }
+    .leyenda span.foa { background-color: #dcedc8; }
