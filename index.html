@@ -395,15 +395,15 @@
 <div class="leyenda">
   <div class="leyenda-left">
     <h2>Optativas</h2>
-    <p>Las materias marcadas como <strong>OPTATIVA ABIERTA</strong> se pueden elegir de entre las siguientes opciones:</p>
-    <p>I7754 Seminario I. Ciberseguridad</p>
-    <p>I7755 Seminario II. Fundamentos de la computación</p>
-    <p>I7758 Taller I. Tecnologías de virtualización</p>
-    <p>I7759 Taller II. Edición fotográfica digital</p>
-    <p>I7760 Taller III. Gamificación</p>
-    <p>I7751 Laboratorio II. Emprendedores I</p>
-    <p>I7752 Laboratio III. Fundamentos de internet de las cosas</p>
-    <p>I7753 Laboratorio IV. Comercio Electrónico</p>
+    <p >Las materias marcadas como <strong>OPTATIVA ABIERTA</strong> se pueden elegir de entre las siguientes opciones:</p>
+    <p onclick="window.open('https://docs.google.com/document/d/18l0FAhLpeH0klAxBUVTcOfzFxex-BSwK/edit?usp=drive_link&ouid=103120278792017453468&rtpof=true&sd=true' , '_blank')">I7754 Seminario I. Ciberseguridad</p>
+    <p onclick="window.open('https://docs.google.com/document/d/1m8SjsOTV3l5SXgkLx4ytcM9Lcoa5W7sR/edit?usp=drive_link&ouid=103120278792017453468&rtpof=true&sd=true' , '_blank')">I7755 Seminario II. Fundamentos de la computación</p>
+    <p onclick="window.open('https://docs.google.com/document/d/1QBQDDvO3tJ1q7vTOc1MdMPGjKk4suZAN/edit?usp=drive_link&ouid=103120278792017453468&rtpof=true&sd=true' , '_blank')">I7758 Taller I. Tecnologías de virtualización</p>
+    <p onclick="window.open('https://docs.google.com/document/d/1aPga9omdyVo8guHxrWWWkiw2Gva_iY9_/edit?usp=drive_link&ouid=103120278792017453468&rtpof=true&sd=true' , '_blank')">I7759 Taller II. Edición fotográfica digital</p>
+    <p onclick="window.open('https://docs.google.com/document/d/19SV57xlCB812i5kZSuoxgs5Sgt0L8Mvu/edit?usp=drive_link&ouid=103120278792017453468&rtpof=true&sd=true' , '_blank')">I7760 Taller III. Gamificación</p>
+    <p onclick="window.open('https://docs.google.com/document/d/1B6FF8GU8JlDMeCtzzdTHeajhHJmW07qt/edit?usp=drive_link&ouid=103120278792017453468&rtpof=true&sd=true' , '_blank')">I7751 Laboratorio II. Emprendedores I</p>
+    <p onclick="window.open('https://docs.google.com/document/d/1bIqdO-m1hbdd1vTyca4EL8lBDgDPULfw/edit?usp=drive_link&ouid=103120278792017453468&rtpof=true&sd=true' , '_blank')">I7752 Laboratio III. Fundamentos de internet de las cosas</p>
+    <p onclick="window.open('https://docs.google.com/document/d/15x98UfVHQ-dObqNAC-2fdbY02NKxGd9f/edit?usp=drive_link&ouid=103120278792017453468&rtpof=true&sd=true' , '_blank')">I7753 Laboratorio IV. Comercio Electrónico</p>
   </div>
 
   <div class="leyenda-right">
@@ -419,13 +419,4 @@
 </div>
 
 </body>
-<script>
-  document.querySelectorAll('td[onclick]').forEach(td => {
-    td.addEventListener('click', function(e) {
-      e.stopImmediatePropagation();
-      const match = this.getAttribute('onclick').match(/href='([^']+)'/);
-      if (match && match[1]) window.open(match[1], '_blank');
-    });
-  });
-</script>
 </html>

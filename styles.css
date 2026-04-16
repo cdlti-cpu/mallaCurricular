@@ -237,6 +237,8 @@ td.foa .materia {
   color: var(--text-secondary);
   padding: 0.25rem 0;
   line-height: 1.4;
+  color: #1a3a5c;
+  cursor: pointer;
 }
 
 .leyenda-left p:first-of-type {
